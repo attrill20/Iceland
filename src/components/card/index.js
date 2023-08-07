@@ -9,10 +9,10 @@ function Card(props) {
         <img className="card-img" src={props.image} alt="Product" />
         <div className="card-info">
           <div className="card-allergens">
-            <p className="allergy">{props.allergen1}</p>
-            <p className="allergy">{props.allergen2}</p>
-            <p className="allergy">{props.allergen3}</p>
-            <p className="allergy">{props.allergen4}</p>
+            <p className="allergy">{props.allergen1} </p>
+            <p className="allergy">{props.allergen2} </p>
+            <p className="allergy">{props.allergen3} </p>
+            <p className="allergy">{props.allergen4} </p>
           </div>
           <div className="card-dietPrefs">
             <p className="dietPref">{props.dietPref1}</p>

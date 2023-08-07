@@ -5,7 +5,7 @@ import { foodData } from './foodData';
 
 function App() {
 
-  
+
   return (
     <div className="App">
       <header className="App-header">
