@@ -1,13 +1,20 @@
 import React from 'react';
 import './App.css';
+import PrimarySearchAppBar from '../../components/Header/header.js'
 import Card from '../card';
 import { foodData } from './foodData';
+
 
 function App() {
 
 
   return (
     <div className="App">
+     <PrimarySearchAppBar/>
+        <p>
+          Welcome to our food allergy site!
+        </p>
+
       <header className="App-header">
         <p>
           Welcome to our food allergy site!
