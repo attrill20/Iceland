@@ -1,8 +1,8 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 function SearchBar() {
   const [userInput, setUserInput] = useState("");
-  const [dummy, setDummy] = useState([]);
+  const [filteredData, setFilteredData] = useState([]);
 
   const dummyData = [
     {
@@ -18,11 +18,14 @@ function SearchBar() {
   ];
 
   function handleInput(event) {
-    setUserInput(event.target.value);
-    if (dummy === dummyData.item) {
-      setDummy(dummyData.item);
-      console.log(dummy);
-    }
+    const input = event.target.value;
+    setUserInput(input);
+
+    // Filter the dummyData based on user input
+    const filteredItems = dummyData.filter((data) =>
+      data.item.toLowerCase().includes(input.toLowerCase())
+    );
+    setFilteredData(filteredItems);
   }
 
   return (
@@ -32,9 +35,15 @@ function SearchBar() {
         onChange={handleInput}
         type="text"
         placeholder="Search for a product"
-      ></input>
+      />
       <button>Search</button>
-      <p>{dummy}</p>
+      <ul>
+        {filteredData.map((data, index) => (
+          <li key={index}>
+            {data.item} {data.Age}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
