@@ -9,7 +9,7 @@ function Card(props) {
         <img className="card-img" src={props.image} alt="Product" />
         <div className="card-info">
           <div className="card-allergens">
-            <p className="allergy">{props.allergen1} <img className="icon" src="https://img.icons8.com/?size=512&id=10716&format=png" alt="icon"/></p>
+            <p className="allergy">{props.allergen1}</p>
             <p className="allergy">{props.allergen2}</p>
             <p className="allergy">{props.allergen3}</p>
             <p className="allergy">{props.allergen4}</p>
