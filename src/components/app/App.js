@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import './App.css';
 import PrimarySearchAppBar from '../../components/Header/header.js'
 import Card from '../card';
@@ -6,11 +6,13 @@ import { foodData } from './foodData';
 
 
 function App() {
+  const [userInput, setUserInput] = useState('');
+  const [filteredData, setFilteredData] = useState([]);
 
 
   return (
     <div className="App">
-     <PrimarySearchAppBar/>
+     <PrimarySearchAppBar setFilteredData={setFilteredData} setUserInput={setUserInput} />
         <p>
           Welcome to our food allergy site!
         </p>
@@ -19,7 +21,7 @@ function App() {
         <p>
           Welcome to our food allergy site!
         </p>
-        {foodData.map((foodItem, index) => (
+        {filteredData.map((foodItem, index) => (
           <Card
             key={index}
             color="#f5f5f5"
