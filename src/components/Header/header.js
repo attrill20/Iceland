@@ -173,7 +173,7 @@ export default function PrimarySearchAppBar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-            MUI
+            Food APP
           </Typography>
           <Search>
             <SearchIconWrapper>
