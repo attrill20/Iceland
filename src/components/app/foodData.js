@@ -1,0 +1,72 @@
+export const foodData = [
+    {
+      productName: "Milkshake",
+      allergen1: "Dairy",
+      allergen2: "Egg",
+      dietPref1: "Vegetarian",
+      image: "https://images.pexels.com/photos/103566/pexels-photo-103566.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    },
+    {
+      productName: "Chicken Salad",
+      allergen1: "Chicken",
+      allergen2: "Egg",
+      dietPref1: "Non-Vegetarian",
+      image: "https://www.skinnytaste.com/wp-content/uploads/2008/07/Classic-Chicken-Salad-4.jpg",
+    },
+    {
+      productName: "Veggie Pizza",
+      allergen1: "Gluten",
+      allergen2: "Dairy",
+      dietPref1: "Vegetarian",
+      image: "https://cookieandkate.com/images/2020/10/best-veggie-pizza-recipe-1.jpg",
+    },
+    {
+      productName: "Fish Tacos",
+      allergen1: "Fish",
+      allergen2: "Soy",
+      dietPref1: "Non-Vegetarian",
+      image: "https://hips.hearstapps.com/hmg-prod/images/fish-tacos-index-64ca974954d47.jpg?crop=1xw:0.9995064165844028xh;center,top&resize=1200:*",
+    },
+    {
+      productName: "Spaghetti Bolognese",
+      allergen1: "Gluten",
+      allergen2: "Dairy",
+      dietPref1: "Non-Vegetarian",
+      image: "https://images.ctfassets.net/uexfe9h31g3m/6QtnhruEFi8qgEyYAICkyS/baae41c24d12e557bcc35c556049f43b/Spaghetti_Bolognese_Lifestyle_Full_Bleed_Recipe_Image__1__copy.jpg?w=2000&h=1500&fm=webp&fit=thumb&q=90",
+    },
+    {
+      productName: "Tofu Stir-Fry",
+      allergen1: "Soy",
+      allergen2: "Peanuts",
+      dietPref1: "Vegan",
+      image: "https://hips.hearstapps.com/hmg-prod/images/190130-tofu-stir-fry-horizontal-150-1549302524.jpg",
+    },
+    {
+      productName: "Cheeseburger",
+      allergen1: "Beef",
+      allergen2: "Wheat",
+      dietPref1: "Non-Vegetarian",
+      image: "https://www.thecookierookie.com/wp-content/uploads/2023/04/featured-stovetop-burgers-recipe-500x500.jpg"
+    },
+    {
+      productName: "Sushi Roll",
+      allergen1: "Fish",
+      allergen2: "Soy",
+      dietPref1: "Pescatarian",
+      image: "https://cdn.media.amplience.net/i/japancentre/guide-page-sushi-79-maki-sushi/Maki-sushi-rolls?$poi$&w=1200&h=630&sm=c&fmt=auto",
+    },
+    {
+      productName: "Mixed Berry Smoothie",
+      allergen1: "None",
+      allergen2: "None",
+      dietPref1: "Vegetarian",
+      image: "https://cookingformysoul.com/wp-content/uploads/2022/05/mixed-berry-smoothie-2-min.jpg",
+    },
+    {
+      productName: "Caesar Salad",
+      allergen1: "Egg",
+      allergen2: "Dairy",
+      dietPref1: "Vegetarian",
+      image: "https://assets.bonappetit.com/photos/624215f8a76f02a99b29518f/1:1/w_2800,h_2800,c_limit/0328-ceasar-salad-lede.jpg",
+    },
+  ];
