@@ -2,7 +2,7 @@ import React from "react";
 import "./header.css";
 import SearchBar from "./SearchBar/search";
 
-function Header({ food, setFood }) {
+function Header() {
   return (
     <div className="header">
       <div className="title">
@@ -10,7 +10,7 @@ function Header({ food, setFood }) {
       </div>
       <div className="searchBar"></div>
       <div className="legend"></div>
-      <SearchBar setFood={setFood} food={food} />
+      <SearchBar />
     </div>
   );
 }
