@@ -1,25 +1,29 @@
 import React from 'react';
 import './App.css';
+import Card from '../card';
+import { foodData } from './foodData';
 
 function App() {
 
 
-  async function fetchFood() {
-    const response = await fetch(' https://world.openfoodfacts.org/api/v2/product/04963406.json'); // fetching a product by bar code
-    const data = await response.json();
-    console.log(data);
-  }
-
-  fetchFood();
-  
   return (
     <div className="App">
       <header className="App-header">
-        
         <p>
           Welcome to our food allergy site!
         </p>
-        
+        {foodData.map((foodItem, index) => (
+          <Card
+            key={index}
+            color="#f5f5f5"
+            productName={foodItem.productName}
+            allergen1={foodItem.allergen1}
+            allergen2={foodItem.allergen2}
+            allergen3={foodItem.allergen3}
+            dietPref1={foodItem.dietPref1}
+            image={foodItem.image}
+          />
+        ))}
       </header>
     </div>
   );
