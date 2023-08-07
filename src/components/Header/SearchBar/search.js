@@ -1,29 +1,42 @@
-import { useState} from 'react'
+import { useState } from "react";
 
-function SearchBar ({food, setFood}) {
+function SearchBar() {
+  const [userInput, setUserInput] = useState("");
+  const [dummy, setDummy] = useState([]);
 
-    const [input, setInput] = useState('')
-    const [filteredItem, setFilteredItem] = useState(null)
-    
-    function handleInput(event){
-        setInput(event.target.value)
+  const dummyData = [
+    {
+      item: "Anas",
+      Brand: "Nike",
+      Age: 77,
+    },
+    {
+      item: "Shervin",
+      Brand: "Umbro",
+      Age: 44,
+    },
+  ];
+
+  function handleInput(event) {
+    setUserInput(event.target.value);
+    if (dummy === dummyData.item) {
+      setDummy(dummyData.item);
+      console.log(dummy);
     }
+  }
 
-    async function fetchFilteredItem() {
-        const response = await fetch(`https://world.openfoodfacts.org/cgi/search.pl?action=process&tagtype_0=categories&tag_contains_0=contains&tag_0=${input}`); // fetching a product by search
-        const data = await response.json();
-        console.log(data);
-        setFilteredItem(data);
-      }
-    
-      fetchFilteredItem();
-
-    return (
-        <div className="searchBar">
-            <input type="text" placeholder="Search for a product"/>
-            <button>Search</button>
-        </div>
-    )
+  return (
+    <div className="searchBar">
+      <input
+        value={userInput}
+        onChange={handleInput}
+        type="text"
+        placeholder="Search for a product"
+      ></input>
+      <button>Search</button>
+      <p>{dummy}</p>
+    </div>
+  );
 }
 
 export default SearchBar;
