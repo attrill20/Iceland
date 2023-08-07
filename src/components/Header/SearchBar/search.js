@@ -37,7 +37,7 @@ function SearchBar() {
         type="text"
         placeholder="Search for a product"
       />
-      <button>Search</button>
+      <button className="searchBtn">Search</button>
       <ul>
         {filteredData.map((data, index) => (
           <li key={index}>

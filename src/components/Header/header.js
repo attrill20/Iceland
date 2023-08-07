@@ -8,9 +8,10 @@ function Header() {
       <div className="title">
         <h1> Food App </h1>
       </div>
-      <div className="searchBar"></div>
+      <div className="searchBar">
+        <SearchBar />
+      </div>
       <div className="legend"></div>
-      <SearchBar />
     </div>
   );
 }
